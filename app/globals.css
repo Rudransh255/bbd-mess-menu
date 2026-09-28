@@ -60,6 +60,7 @@ h1,h2,h3 { font-weight:950; letter-spacing:-.055em; }
 .bottom-nav { position:fixed; z-index:10; bottom:0; left:0; right:0; border-top:2px solid var(--ink); background:var(--paper); display:flex; justify-content:center; gap:9px; padding:9px max(12px,env(safe-area-inset-right)) calc(9px + env(safe-area-inset-bottom)); box-shadow:0 -4px 16px #00000012; text-transform:uppercase; }
 .bottom-nav a { min-height:48px; min-width:0; max-width:160px; flex:1 1 0; display:flex; align-items:center; justify-content:center; gap:8px; font-size:.68rem; text-align:center; }
 .bottom-nav a span { font-size:1.3rem; line-height:1; }
+.bottom-nav a svg { width:18px; height:18px; flex:0 0 18px; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
 .bottom-nav a.active { border:2px solid var(--ink); background:var(--yellow); box-shadow:3px 3px 0 var(--ink); }
 .loading-card { border:2px solid var(--ink); padding:28px; background:var(--yellow); font-weight:800; }
 .page-title { margin:28px 0 28px; }

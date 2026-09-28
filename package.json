@@ -12,6 +12,8 @@
     "test": "node --experimental-strip-types --test lib/meal-time.test.ts lib/menu.test.ts"
   },
   "dependencies": {
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.117.2",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"

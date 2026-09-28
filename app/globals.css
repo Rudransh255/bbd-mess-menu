@@ -99,3 +99,8 @@ h1,h2,h3 { font-weight:950; letter-spacing:-.055em; }
 .feedback-form .primary-button { align-self:stretch; margin-top:8px; }
 @media(max-width:700px) { .site-header-inner { padding:8px 14px; } .header-mark { display:none; } .page-wrap { padding:20px 16px 46px; } .hero { padding:17px; } .hero-pretitle { margin-top:30px; } .meal-list,.week-grid { grid-template-columns:1fr; } .feedback-callout { flex-direction:column; align-items:stretch; } .feedback-form { padding:17px; } }
 @media(max-width:380px) { .page-kicker { font-size:.55rem; } .page-title h1 { font-size:2.7rem; } .hero-top { align-items:start; } .hero-time { max-width:105px; } .hero-bottom { font-size:.55rem; } .day-tabs { gap:3px; } .day-tabs button { font-size:.59rem; min-height:52px; } .rating-grid { gap:4px; } .rating-grid span { font-size:.5rem; } .bottom-nav { gap:3px; } .bottom-nav a { font-size:.57rem; gap:4px; } }
+.admin-login { min-height:100vh; display:grid; place-items:center; padding:20px; }
+.admin-login-card { width:min(100%,600px); border:3px solid var(--ink); background:white; box-shadow:7px 7px 0 var(--ink); padding:clamp(22px,5vw,40px); }
+.admin-login-card h1 { font-size:clamp(2.4rem,7vw,4.5rem); line-height:.95; text-transform:uppercase; margin-bottom:18px; }
+.admin-login-card p { line-height:1.5; }
+.admin-login-card form { margin-top:24px; }

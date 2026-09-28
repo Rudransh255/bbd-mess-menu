@@ -1,0 +1,8 @@
+.env*
+!.env.example
+.codex/
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+.playwright-mcp/

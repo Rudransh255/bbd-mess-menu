@@ -20,7 +20,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
     <nav className="bottom-nav" aria-label="Main navigation">
       <Link href="/" aria-current={pathname === '/' ? 'page' : undefined} className={pathname === '/' ? 'active' : ''}><span aria-hidden>◫</span> Today</Link>
       <Link href="/week" aria-current={pathname === '/week' ? 'page' : undefined} className={pathname === '/week' ? 'active' : ''}><span aria-hidden>▦</span> Week</Link>
-      <Link href="/feedback" aria-current={pathname === '/feedback' ? 'page' : undefined} className={pathname === '/feedback' ? 'active' : ''}><span aria-hidden>✎</span> Feedback</Link>
+      <Link href="/stores" aria-current={pathname.startsWith('/stores') ? 'page' : undefined} className={pathname.startsWith('/stores') ? 'active' : ''}><span aria-hidden>⌂</span> Nearby Stores</Link>
     </nav>
   </>;
 }

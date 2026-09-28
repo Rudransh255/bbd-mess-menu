@@ -10,6 +10,12 @@ export async function createDraft(formData:FormData) {
   const {supabase}=await requireAdmin(); const {data,error}=await supabase.rpc('create_weekly_draft',{p_week_start:weekStart});
   if(error||!data) fail('/admin/menu',error?.message??'Draft could not be created.'); redirect(`/admin/menu/${data}`);
 }
+export async function editPublishedMenu(menuId:string) {
+  if(!uuid.test(menuId)) fail('/admin/menu','Invalid menu.');
+  const {supabase}=await requireAdmin(); const {data,error}=await supabase.rpc('clone_published_menu',{p_menu_week_id:menuId});
+  if(error||!data) fail('/admin/menu',error?.message??'The edit draft could not be created.');
+  revalidatePath('/admin/menu'); redirect(`/admin/menu/${data}?cloned=1`);
+}
 export async function saveDraft(menuId:string,formData:FormData) {
   if(!uuid.test(menuId)) fail('/admin/menu','Invalid menu.');
   const {supabase}=await requireAdmin(); const {data:meals,error:mealError}=await supabase.from('meals').select('id').eq('menu_week_id',menuId);

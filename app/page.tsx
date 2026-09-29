@@ -47,7 +47,7 @@ export default function TodayPage() {
       </article>)}</div>
     </section>
 
-    <section className="feedback-callout"><div><p className="eyebrow">YOUR VOICE MATTERS</p><h2>How was the food?</h2><p>Tell us what worked and what could be better.</p></div><Link href="/feedback" className="primary-button">GIVE FEEDBACK ↗</Link></section>
+    <section className="rating-callout"><div><p className="eyebrow">QUICK RATING</p><h2>How was the food?</h2><p>Rate your meal and see how other students voted.</p></div><Link href="/rating" className="primary-button">RATE YOUR MEAL</Link></section>
     <p className="demo-note">Preview transcription of the hostel mess sheet effective 22 September 2026, pending verification. Salad may include any three of cucumber, onion, radish, tomato and beetroot. Check the mess notice for changes.</p>
   </div></Shell>;
 }

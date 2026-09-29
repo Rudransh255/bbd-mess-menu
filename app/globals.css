@@ -19,6 +19,8 @@ a { color:inherit; text-decoration:none; }
 .brand small { font-size:.6rem; margin-top:4px; color:#795d56; }
 .header-mark { font-size:.68rem; background:var(--yellow); border:2px solid var(--ink); box-shadow:3px 3px 0 var(--ink); padding:9px 12px; }
 .site-main { padding-bottom:95px; }
+.site-footer { padding:20px max(16px,calc((100% - 1350px) / 2)) 115px; border-top:2px solid var(--ink); background:var(--paper); text-align:center; }
+.site-footer p { margin:0; line-height:1.6; }.site-footer a { display:inline-flex; min-height:44px; align-items:center; font-weight:800; text-decoration:underline; text-underline-offset:4px; overflow-wrap:anywhere; }
 .page-wrap { max-width:1120px; margin:auto; padding:28px 20px 54px; }
 .page-kicker { display:flex; justify-content:space-between; gap:12px; font-size:.64rem; color:#65524d; text-transform:uppercase; margin:0 0 18px; }
 .eyebrow { font-size:.65rem; color:#a92f13; margin:0 0 7px; text-transform:uppercase; }

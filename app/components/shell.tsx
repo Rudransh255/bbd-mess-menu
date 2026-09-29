@@ -17,6 +17,9 @@ export function Shell({ children }: { children: React.ReactNode }) {
       </div>
     </header>
     <main id="main-content" className="site-main">{children}</main>
+    <footer className="site-footer">
+      <p>Facing a bug? Contact <strong>Rudransh Kumar Singh</strong> at <a href="mailto:rudranshks55@gmail.com">rudranshks55@gmail.com</a>.</p>
+    </footer>
     <nav className="bottom-nav" aria-label="Main navigation">
       <Link href="/" aria-current={pathname === '/' ? 'page' : undefined} className={pathname === '/' ? 'active' : ''}><span aria-hidden>◫</span> Today</Link>
       <Link href="/week" aria-current={pathname === '/week' ? 'page' : undefined} className={pathname === '/week' ? 'active' : ''}><span aria-hidden>▦</span> Week</Link>

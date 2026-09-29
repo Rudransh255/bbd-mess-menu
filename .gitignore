@@ -6,3 +6,9 @@ node_modules/
 out/
 *.tsbuildinfo
 .playwright-mcp/
+
+# Local project documentation
+README.md
+SUPABASE_SETUP.md
+prd.md
+tech_stack.md

@@ -21,6 +21,7 @@ a { color:inherit; text-decoration:none; }
 .site-main { padding-bottom:95px; }
 .site-footer { padding:20px max(16px,calc((100% - 1350px) / 2)) 115px; border-top:2px solid var(--ink); background:var(--paper); text-align:center; }
 .site-footer p { margin:0; line-height:1.6; }.site-footer a { display:inline-flex; min-height:44px; align-items:center; font-weight:800; text-decoration:underline; text-underline-offset:4px; overflow-wrap:anywhere; }
+.install-prompt { position:fixed; z-index:20; left:50%; bottom:82px; width:min(620px,calc(100% - 24px)); transform:translateX(-50%); display:grid; grid-template-columns:1fr auto auto; align-items:center; gap:16px; padding:16px; border:3px solid var(--ink); background:var(--mint); box-shadow:6px 6px 0 var(--ink); }.install-prompt strong { font-family:Arial,Helvetica,sans-serif; font-size:.8rem; letter-spacing:.06em; }.install-prompt p { margin:5px 0 0; font-size:.85rem; line-height:1.4; }.install-prompt .primary-button { min-width:112px; }.install-dismiss { width:44px; height:44px; border:2px solid var(--ink); background:var(--paper); font-size:1.5rem; font-weight:900; cursor:pointer; }
 .page-wrap { max-width:1120px; margin:auto; padding:28px 20px 54px; }
 .page-kicker { display:flex; justify-content:space-between; gap:12px; font-size:.64rem; color:#65524d; text-transform:uppercase; margin:0 0 18px; }
 .eyebrow { font-size:.65rem; color:#a92f13; margin:0 0 7px; text-transform:uppercase; }
@@ -101,6 +102,7 @@ h1,h2,h3 { font-weight:950; letter-spacing:-.055em; }
 .store-menu-photos { display:grid; gap:28px; }
 @media(max-width:700px) { .store-grid { grid-template-columns:1fr; }.store-contact { align-items:stretch; flex-direction:column; }.store-contact .primary-button { width:100%; } }
 @media(max-width:520px) { .store-card { grid-template-columns:1fr; }.store-card .primary-button { grid-column:1; }.store-card h2 { overflow-wrap:anywhere; } }
+@media(max-width:520px) { .install-prompt { grid-template-columns:1fr auto; gap:10px; }.install-prompt .primary-button { grid-column:1/-1; grid-row:2; width:100%; }.install-dismiss { grid-column:2; grid-row:1; } }
 @media(max-width:380px) { .page-kicker { font-size:.55rem; } .page-title h1 { font-size:2.7rem; } .hero-top { align-items:start; } .hero-time { max-width:105px; } .hero-bottom { font-size:.55rem; } .day-tabs { gap:3px; } .day-tabs button { font-size:.59rem; min-height:52px; } .rating-grid { gap:4px; } .rating-grid span { font-size:.5rem; } .bottom-nav { gap:3px; }.bottom-nav a { font-size:.52rem; gap:3px; padding-inline:3px; }.bottom-nav a span { font-size:1rem; } }
 @media(max-width:340px) { .rating-grid { grid-template-columns:repeat(3,minmax(0,1fr)); } }
 .admin-login { min-height:100vh; display:grid; place-items:center; padding:20px; }
